@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiji - Web - Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <header class="bg-green-500 p-4 text-white flex items-center justify-between">
+        <div class="flex items-center">
+            <button class="mr-4">
+                <i class='bx bx-menu text-2xl'></i>
+            </button>
+            <a href="./jiji.html"><div class="text-2xl font-bold">jiji</div></a>
+        </div>
+        <div class="flex-1 mx-4 relative">
+            <div class="flex">
+                <input
+                    type="text"
+                    placeholder="Search in Vehicles"
+                    class="p-2 w-full rounded-l border-r-0 text-black"
+                />
+                <button class="bg-white p-2 border-l border-gray-300 rounded-r text-gray-500">
+                    <i class='bx bx-search'></i>
+                </button>
+            </div>
+        </div>
+        <div class="flex items-center">
+            <button class="mr-4 text-sm">Sign in</button>
+            <span class="mr-4">|</span>
+            <button class="mr-4 text-sm">Registration</button>
+            <button class="bg-orange-400 px-6 py-2 rounded text-white font-medium">
+                SELL
+            </button>
+        </div>
+    </header>
+    <div class="px-4 py-2 bg-gray-100 text-sm">
+        <span class="text-gray-500">Jiji</span>
+        <span class="mx-2 text-gray-400">/</span>
+        <span>35317 results for Vehicles in Uganda</span>
+    </div>
+    <div class="container mx-auto flex">
+        <div class="w-64 pt-4">
+            <div class="bg-white mb-4 rounded shadow">
+                <h3 class="bg-green-500 text-white p-3 rounded-t">Categories</h3>
+                <div class="p-4">
+                    <div class="mb-2 font-medium">Vehicles</div>
+                    <ul class="ml-4 text-sm">
+                        <li class="mb-1">Cars | 16706</li>
+                        <li class="mb-1">Buses & Microbuses | 414</li>
+                        <li class="mb-1">Heavy Equipment | 196</li>
+                        <li class="mb-1">Motorcycles & Scooters | 6479</li>
+                        <li class="text-green-500 cursor-pointer">Show all 8</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bg-white mb-4 rounded shadow">
+                <div class="p-4 flex justify-between items-center">
+                    <h3>Location</h3>
+                    <i class='bx bx-chevron-right'></i>
+                </div>
+                <div class="px-4 pb-4 text-sm text-gray-600">
+                    All Uganda
+                </div>
+            </div>
+            <div class="bg-white mb-4 rounded shadow">
+                <div class="p-4 flex justify-between items-center border-b">
+                    <h3>Price, USh</h3>
+                    <i class='bx bx-chevron-down'></i>
+                </div>
+                <div class="p-4">
+                    <div class="flex mb-4">
+                        <input type="text" placeholder="min" class="w-1/2 border p-2 mr-2 rounded" />
+                        <input type="text" placeholder="max" class="w-1/2 border p-2 rounded" />
+                    </div>
+                    
+                    <div class="mb-2">
+                        <label class="flex items-center text-sm">
+                            <input type="radio" name="price" class="mr-2" />
+                            Under 80 K • 3 605 ads
+                        </label>
+                    </div>
+                    <div class="mb-2">
+                        <label class="flex items-center text-sm">
+                            <input type="radio" name="price" class="mr-2" />
+                            80 - 350 K • 14 420 ads
+                        </label>
+                    </div>
+                    <div class="mb-2">
+                        <label class="flex items-center text-sm">
+                            <input type="radio" name="price" class="mr-2" />
+                            350 K - 11 M • 24 033 ads
+                        </label>
+                    </div>
+                    <div class="mb-2">
+                        <label class="flex items-center text-sm">
+                            <input type="radio" name="price" class="mr-2" />
+                            11 - 100 M • 15 021 ads
+                        </label>
+                    </div>
+                    <div class="mb-2">
+                        <label class="flex items-center text-sm">
+                            <input type="radio" name="price" class="mr-2" />
+                            More than 100 M • 3 004 ads
+                        </label>
+                    </div>
+                    
+                    <div class="flex justify-between mt-4 text-xs">
+                        <button class="text-gray-500">CLEAR</button>
+                        <button class="text-green-500">SAVE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white mb-4 rounded shadow">
+                <div class="p-4 flex justify-between items-center border-b">
+                    <h3>Verified sellers</h3>
+                    <i class='bx bx-chevron-down'></i>
+                </div>
+                <div class="p-4">
+                    <div class="mb-2">
+                        <label class="flex items-center text-sm text-green-500">
+                            <input type="radio" name="verified" class="mr-2" checked />
+                            Show all
+                        </label>
+                    </div>
+                    <div class="mb-2">
+                        <label class="flex items-center text-sm">
+                            <input type="radio" name="verified" class="mr-2" />
+                            Verified sellers • 7 874 ads
+                        </label>
+                    </div>
+                    <div class="mb-2">
+                        <label class="flex items-center text-sm">
+                            <input type="radio" name="verified" class="mr-2" />
+                            Unverified sellers • 52 210 ads
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white mb-4 rounded shadow">
+                <div class="p-4 flex justify-between items-center border-b">
+                    <h3>Discount</h3>
+                    <i class='bx bx-chevron-down'></i>
+                </div>
+                <div class="p-4">
+                    <div class="mb-2">
+                        <label class="flex items-center text-sm text-green-500">
+                            <input type="radio" name="discount" class="mr-2" checked />
+                            Show all
+                        </label>
+                    </div>
+                    <div class="mb-2">
+                        <label class="flex items-center text-sm">
+                            <input type="radio" name="discount" class="mr-2" />
+                            With discount • 51 ads
+                        </label>
+                    </div>
+                    <div class="mb-2">
+                        <label class="flex items-center text-sm">
+                            <input type="radio" name="discount" class="mr-2" />
+                            Without discount • 60 033 ads
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex-1 p-4">
+            <div class="mb-4">
+                <h1 class="text-2xl font-bold mb-4">Vehicles in Uganda</h1>
+                
+                <div class="flex justify-between items-center">
+                    <div class="flex">
+                        <button class="p-2 bg-green-500 text-white rounded-l">
+                            <i class='bx bxs-grid'></i>
+                        </button>
+                        <button class="p-2 bg-gray-200 rounded-r">
+                            <i class='bx bx-list-ul'></i>
+                        </button>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="mr-2 text-sm">Sort by:</span>
+                        <div class="flex items-center mr-4">
+                            <span class="text-sm">Recommended</span>
+                            <div class="ml-1 flex flex-col">
+                                <i class='bx bx-up-arrow-alt text-xs'></i>
+                                <i class='bx bx-down-arrow-alt text-xs'></i>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class='bx bx-time mr-1'></i>
+                            <span class="text-sm">Any time</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-white rounded shadow overflow-hidden">
+                    <div class="relative">
+                        <img src="/api/placeholder/300/200" alt="Tire" class="w-full h-48 object-cover" />
+                        <div class="absolute top-2 left-2 bg-blue-500 text-white px-2 py-1 rounded-full text-xs flex items-center">
+                            <i class='bx bx-check mr-1'></i>
+                            Verified ID
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <div class="text-xl font-bold text-green-500">USh 330,000</div>
+                        <h3 class="font-bold mb-1">225/65r17 ROADX Tyres</h3>
+                        <p class="text-sm text-gray-600 mb-4">225/65r17 ROADX Tyres it's tested and trusted. Plus all other sizes and brands are available in...</p>
+                        <div class="flex items-center text-xs text-gray-500 mb-2">
+                            <i class='bx bx-map mr-1'></i>
+                            Kampala, Central Division
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Brand New</span>
+                            <i class='bx bx-heart text-blue-400'></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded shadow overflow-hidden">
+                    <div class="relative">
+                        <img src="/api/placeholder/300/200" alt="Tire" class="w-full h-48 object-cover" />
+                        <div class="absolute top-2 right-2 bg-red-500 text-white px-2 py-1 rounded-full text-xs flex items-center">
+                            POPULAR
+                        </div>
+                        <div class="absolute bottom-2 right-2 bg-white text-black px-2 py-1 rounded text-xs flex items-center">
+                            <i class='bx bx-message-alt-detail mr-1'></i>
+                            QUICK REPLY
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <div class="text-xl font-bold text-green-500">USh 400,000</div>
+                        <h3 class="font-bold mb-1">New FARROAD Tyres in All Sizes</h3>
+                        <p class="text-sm text-gray-600 mb-4">Linglong ,Petromax ,Archilles ,GT savero ,JK Tyres , Onyx , joyroad Bridgestone ,Kapsen, FARROAD...</p>
+                        <div class="flex items-center text-xs text-gray-500 mb-2">
+                            <i class='bx bx-map mr-1'></i>
+                            Kampala, Central Division
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Brand New</span>
+                            <i class='bx bx-heart text-blue-400'></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded shadow overflow-hidden">
+                    <div class="relative">
+                        <img src="/api/placeholder/300/200" alt="Tire" class="w-full h-48 object-cover" />
+                    </div>
+                    <div class="p-4">
+                        <div class="text-xl font-bold text-green-500">USh 150,000</div>
+                        <h3 class="font-bold mb-1">Yokohama 215/60r16</h3>
+                        <p class="text-sm text-gray-600 mb-4">Yokohama Japan used Tyres still in good condition, available at affordable prices</p>
+                        <div class="flex items-center text-xs text-gray-500 mb-2">
+                            <i class='bx bx-map mr-1'></i>
+                            Kampala, Central Division
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="bg-gray-100 text-gray-800 px-2 py-1 rounded text-xs">Used</span>
+                            <i class='bx bx-heart text-blue-400'></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded shadow overflow-hidden">
+                    <div class="relative">
+                        <img src="/api/placeholder/300/200" alt="Toyota" class="w-full h-48 object-cover" />
+                    </div>
+                    <div class="p-4">
+                        <div class="text-xl font-bold text-green-500">USh 45,000,000</div>
+                        <h3 class="font-bold mb-1">Toyota Alphard 2010 White</h3>
+                        <p class="text-sm text-gray-600 mb-4">Toyota Alphard for sale – clean, spacious 7-seater with a 2.4L VVTi petrol engine, automatic...</p>
+                        <div class="flex items-center text-xs text-gray-500 mb-2">
+                            <i class='bx bx-map mr-1'></i>
+                            Kampala, Rubaga
+                        </div>
+                        <div class="flex items-center">
+                            <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs mr-2">Local Used</span>
+                            <span class="bg-gray-100 text-gray-800 px-2 py-1 rounded text-xs">Automatic</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded shadow overflow-hidden">
+                    <div class="relative">
+                        <img src="/api/placeholder/300/200" alt="Tire" class="w-full h-48 object-cover" />
+                    </div>
+                    <div class="p-4">
+                        <div class="text-xl font-bold text-green-500">USh 500,000</div>
+                        <h3 class="font-bold mb-1">Tyre 265/65r17 Wideway Brand.</h3>
+                        <p class="text-sm text-gray-600 mb-4">We are located at shamba complex opp mukwano mall, we also do deliveries.</p>
+                        <div class="flex items-center text-xs text-gray-500 mb-2">
+                            <i class='bx bx-map mr-1'></i>
+                            Kampala, Central Division
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Brand New</span>
+                            <span class="text-yellow-500">🔥</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded shadow overflow-hidden">
+                    <div class="relative">
+                        <img src="/api/placeholder/300/200" alt="Air Compressor" class="w-full h-48 object-cover" />
+                    </div>
+                    <div class="p-4">
+                        <div class="text-xl font-bold text-green-500">USh 600,000</div>
+                        <h3 class="font-bold mb-1">50litres Air Compressor (Power Blitzz)</h3>
+                        <p class="text-sm text-gray-600 mb-4">Used for paint spraying Used for Tyre inflation</p>
+                        <div class="flex justify-between items-center">
+                            <span class="bg-gray-100 text-gray-800 px-2 py-1 rounded text-xs">Used</span>
+                            <i class='bx bx-heart text-blue-400'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
