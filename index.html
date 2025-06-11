@@ -1,255 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FUZU - Web - Clone</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FUZU - Web - Clone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
 </head>
 <body class="bg-gray-50 font-sans">
-    <header class="bg-white py-4 px-6 flex items-center justify-between border-b">
-        <div class="flex items-center gap-8">
-            <a href="/" class="text-yellow-400 font-bold text-2xl">
-                FUZU
-            </a>
-            <nav class="hidden md:flex items-center gap-6">
-                <a href="/" class="flex items-center gap-1 font-medium">
-                    <i class='bx bx-home-alt-2 text-xl'></i>
-                    Home
-                </a>
-                <a href="#" class="font-medium">Jobs</a>
-                <a href="#" class="font-medium">Learn</a>
-                <a href="#" class="font-medium">Forum</a>
-            </nav>
-        </div>
-        <div class="flex items-center gap-4">
-            <a href=#" class="hidden md:block font-medium">
-                For employers
-            </a>
-            <a href="#" class="border rounded-md px-4 py-2 font-medium">
-                Login
-            </a>
-            <a href="#" class="bg-yellow-400 rounded-md px-4 py-2 font-medium">
-                Join now
-            </a>
-        </div>
-    </header>
-    <div class="bg-green-600 text-white py-3 px-6 flex items-center justify-center relative">
-        <div class="flex flex-wrap items-center justify-center gap-1 text-sm md:text-base">
-            <span class="font-bold">
-                MTN<span class="text-yellow-400">Pulse</span>
-            </span>
-            <span class="font-bold">MTN Pulse!</span>
-            <span>Register now and get</span>
-            <span class="font-bold">400 Fuzu Points.</span>
-            <span>Get started</span>
-            <a href="/register" class="font-bold underline">
-                HERE
-            </a>
-        </div>
-        <button class="absolute right-4 top-1/2 transform -translate-y-1/2">
-            <i class='bx bx-x text-2xl'></i>
-        </button>
+
+  <!-- Header -->
+  <header class="bg-white py-4 px-6 flex flex-col md:flex-row items-center justify-between border-b gap-4 md:gap-0">
+    <div class="flex items-center justify-between w-full md:w-auto gap-8">
+      <a href="/" class="text-yellow-400 font-bold text-2xl">FUZU</a>
+      <nav class="hidden md:flex items-center gap-6">
+        <a href="/" class="flex items-center gap-1 font-medium"><i class='bx bx-home-alt-2 text-xl'></i>Home</a>
+        <a href="#" class="font-medium">Jobs</a>
+        <a href="#" class="font-medium">Learn</a>
+        <a href="#" class="font-medium">Forum</a>
+      </nav>
     </div>
-    <section class="bg-yellow-300 py-10 md:py-16 px-6 md:h-[98vh]">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
-            <div class="space-y-6 md:w-[100%]">
-                <h1 class="text-4xl md:text-5xl font-bold leading-tight">No.1 guide to careers and jobs in Uganda</h1>
-                <p class="text-lg">
-                    Tired with job boards? Join millions of professionals and boost your growth with best career tools and job
-                    recommendations in Africa.
-                </p>
-                <div class="">
-                    <img class="" src="./images/horizontal-view-cheerful-dark-skinned-young-man-european-woman-have-positive-expressions.png" alt="">
-                </div>
-            </div>
-            <div class="max-w-6xl md:w-[80%] md:h-[20%] mx-auto grid md:grid-cols-1 gap-6 md:mt-20">
-                <div class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-between">
-                    <div class="flex items-center gap-4">
-                        <div class="bg-yellow-100 p-4 rounded-lg">
-                            <i class='bx bxs-shopping-bags text-2xl'></i>
-                        </div>
-                        <div>
-                            <h3 class="font-semibold text-lg">Find a job</h3>
-                            <div class="flex items-center gap-2">
-                                <span class="bg-blue-600 text-white text-xs px-2 py-0.5 rounded-full">120</span>
-                                <span class="text-sm">open vacancies</span>
-                            </div>
-                        </div>
-                    </div>
-                    <i class='bx bx-right-arrow-alt text-2xl'></i>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-between">
-                    <div class="flex items-center gap-4">
-                        <div class="bg-blue-100 p-4 rounded-lg">
-                            <i class='bx bxs-book-content text-2xl'></i>
-                        </div>
-                        <div>
-                            <h3 class="font-semibold text-lg">Learn new skills</h3>
-                            <div class="flex items-center gap-2">
-                                <span class="bg-blue-600 text-white text-xs px-2 py-0.5 rounded-full">382</span>
-                                <span class="text-sm">online courses</span>
-                            </div>
-                        </div>
-                    </div>
-                    <i class='bx bx-right-arrow-alt text-2xl'></i>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-between">
-                    <div class="flex items-center gap-4">
-                        <div class="bg-green-100 p-4 rounded-lg">
-                            <i class='bx bx-user text-2xl'></i>
-                        </div>
-                        <div>
-                            <h3 class="font-semibold text-lg">Join a community</h3>
-                            <div class="flex items-center gap-2">
-                                <span class="bg-blue-600 text-white text-xs px-2 py-0.5 rounded-full">2.5M+</span>
-                                <span class="text-sm">Fuzu users</span>
-                            </div>
-                        </div>
-                    </div>
-                    <i class='bx bx-right-arrow-alt text-2xl'></i>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="py-8 px-6 bg-gray-50">
-        
-    </section>
-    <section class="py-12 px-6">
-        <div class="max-w-6xl mx-auto space-y-8">
-            <h2 class="text-3xl font-bold text-center">Search jobs in Uganda</h2>
+    <div class="flex flex-col md:flex-row items-center gap-4">
+      <a href="#" class="hidden md:block font-medium">For employers</a>
+      <a href="#" class="border rounded-md px-4 py-2 font-medium">Login</a>
+      <a href="#" class="bg-yellow-400 rounded-md px-4 py-2 font-medium">Join now</a>
+    </div>
+  </header>
 
-            <div class="flex justify-center gap-2 text-sm">
-                <a href="/jobs/africa" class="text-blue-600">Jobs in Africa</a>
-                <span>|</span>
-                <a href="/jobs/kenya" class="text-blue-600">Jobs in Kenya</a>
-                <span>|</span>
-                <a href="/jobs/nigeria" class="text-blue-600">Jobs in Nigeria</a>
-            </div>
+  <!-- MTN Pulse Banner -->
+  <div class="bg-green-600 text-white py-3 px-6 flex flex-wrap items-center justify-center relative text-center text-sm md:text-base">
+    <div class="flex flex-wrap items-center justify-center gap-1">
+      <span class="font-bold">MTN<span class="text-yellow-400">Pulse</span></span>
+      <span class="font-bold">MTN Pulse!</span>
+      <span>Register now and get</span>
+      <span class="font-bold">400 Fuzu Points.</span>
+      <span>Get started</span>
+      <a href="/register" class="font-bold underline">HERE</a>
+    </div>
+    <button class="absolute right-4 top-1/2 transform -translate-y-1/2">
+      <i class='bx bx-x text-2xl'></i>
+    </button>
+  </div>
 
-            <div class="bg-white rounded-lg shadow p-6">
-                <div class="grid md:grid-cols-4 gap-4">
-                    <div class="relative">
-                        <select class="w-full p-3 border rounded-md appearance-none pr-10">
-                            <option>Jobs by profession</option>
-                        </select>
-                        <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
-                            <i class='bx bxs-chevron-down'></i>
-                        </div>
-                    </div>
-                    <div class="relative">
-                        <select class="w-full p-3 border rounded-md appearance-none pr-10">
-                            <option>Jobs by industry</option>
-                        </select>
-                        <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
-                            <i class='bx bxs-chevron-down'></i>
-                        </div>
-                    </div>
-                    <div class="relative">
-                        <select class="w-full p-3 border rounded-md appearance-none pr-10">
-                            <option>Jobs by city</option>
-                        </select>
-                        <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
-                            <i class='bx bxs-chevron-down'></i>
-                        </div>
-                    </div>
-                    <button class="bg-yellow-400 text-black font-medium p-3 rounded-md flex items-center justify-center gap-2">
-                        <i class='bx bxs-chevron-down'></i>
-                        Search jobs
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="py-8 px-6 bg-gray-50">
-        <div class="max-w-6xl mx-auto space-y-6">
-            <h2 class="text-2xl font-bold text-center">Popular searches</h2>
+  <!-- Hero Section -->
+  <section class="bg-yellow-300 py-10 md:py-16 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+      <div class="space-y-6">
+        <h1 class="text-3xl md:text-5xl font-bold leading-tight text-center md:text-left">No.1 guide to careers and jobs in Uganda</h1>
+        <p class="text-lg text-center md:text-left">
+          Tired with job boards? Join millions of professionals and boost your growth with best career tools and job recommendations in Africa.
+        </p>
+        <img src="./images/horizontal-view-cheerful-dark-skinned-young-man-european-woman-have-positive-expressions.png" alt="" class="w-full h-auto object-cover rounded-lg"/>
+      </div>
 
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="/jobs/business" class="bg-white px-4 py-3 rounded-md shadow-sm flex items-center gap-2">
-                    Business, strategic management jobs
-                    <i class='bx bx-search text-yellow-500'></i>
-                </a>
-                <a href="/jobs/accounting" class="bg-white px-4 py-3 rounded-md shadow-sm flex items-center gap-2">
-                    Accounting, finance, banking, insurance jobs
-                    <i class='bx bx-search text-yellow-500'></i>
-                </a>
-                <a href="/jobs/teaching" class="bg-white px-4 py-3 rounded-md shadow-sm flex items-center gap-2">
-                    Teaching, training jobs
-                    <i class='bx bx-search text-yellow-500'></i>
-                </a>
-                <a href="/jobs/transportation" class="bg-white px-4 py-3 rounded-md shadow-sm flex items-center gap-2">
-                    Transportation, logistics, driving jobs
-                    <i class='bx bx-search text-yellow-500'></i>
-                </a>
-                <a href="/jobs/it" class="bg-white px-4 py-3 rounded-md shadow-sm flex items-center gap-2">
-                    Information technology, software development jobs
-                    <i class='bx bx-search text-yellow-500'></i>
-                </a>
-                <a href="/jobs/engineering" class="bg-white px-4 py-3 rounded-md shadow-sm flex items-center gap-2">
-                    Engineering, architecture jobs
-                    <i class='bx bx-search text-yellow-500'></i>
-                </a>
-                <a href="/jobs/kampala" class="bg-white px-4 py-3 rounded-md shadow-sm flex items-center gap-2">
-                    Jobs in Kampala
-                    <i class='bx bxs-map'></i>
-                </a>
+      <!-- Boxes -->
+      <div class="grid gap-6">
+        <!-- Box 1 -->
+        <div class="bg-white p-6 rounded-lg shadow-sm flex flex-col md:flex-row items-center justify-between gap-4">
+          <div class="flex items-center gap-4">
+            <div class="bg-yellow-100 p-4 rounded-lg"><i class='bx bxs-shopping-bags text-2xl'></i></div>
+            <div>
+              <h3 class="font-semibold text-lg">Find a job</h3>
+              <div class="flex items-center gap-2">
+                <span class="bg-blue-600 text-white text-xs px-2 py-0.5 rounded-full">120</span>
+                <span class="text-sm">open vacancies</span>
+              </div>
             </div>
-            
+          </div>
+          <i class='bx bx-right-arrow-alt text-2xl'></i>
         </div>
-    </section>
-    <section class="md:flex md:items-center md:justify-center md:mx-20 md:h-[100vh]">
-        <div class="md:w-[50%] md:h-[50vh]">
-            <div class="md:w-[500px] md:h-[80vh] overflow-hidden rounded-2xl w-[400px]">
-                <img class="  w-full h-[80vh] w-[400px] object-cover p-2" src="https://img.freepik.com/free-photo/social-media-symbols-arrangement_23-2149019161.jpg?uid=R186898022&ga=GA1.1.412480284.1745481769&semt=ais_hybrid&w=740" alt="">
+
+        <!-- Box 2 -->
+        <div class="bg-white p-6 rounded-lg shadow-sm flex flex-col md:flex-row items-center justify-between gap-4">
+          <div class="flex items-center gap-4">
+            <div class="bg-blue-100 p-4 rounded-lg"><i class='bx bxs-book-content text-2xl'></i></div>
+            <div>
+              <h3 class="font-semibold text-lg">Learn new skills</h3>
+              <div class="flex items-center gap-2">
+                <span class="bg-blue-600 text-white text-xs px-2 py-0.5 rounded-full">382</span>
+                <span class="text-sm">online courses</span>
+              </div>
             </div>
-          
+          </div>
+          <i class='bx bx-right-arrow-alt text-2xl'></i>
         </div>
-        
-            <div class="md:w-[50%] md:mt-40 p-4">
-                <p class="text-5xl font-bold">5,000+ </p> <br>
-                 <span class="text-1xl">monthly job vacancies across Africa</span> 
-                 <div class="">
-                    <div class="flex gap-2">
-                        <i class='bx bx-search-alt text-2xl'></i>
-                        <p>Get personalized job alerts</p> 
-                    </div>
-                    <div class="flex gap-2">
-                        <i class='bx bx-time text-2xl'></i>
-                        <p>Apply for work in minutes</p> 
-                    </div>
-                    <div class="flex gap-2">
-                        <i class='bx bx-chat text-2xl'></i>
-                        <p>Receive feedback on your applications</p> 
-                    </div>
-                 </div>
-                 <button class="py-2 bg-[#ffe140] px-4 rounded-lg font-bold mt-4">Get a job now <span><i class='bx bx-right-arrow-alt'></i></span></button>
+
+        <!-- Box 3 -->
+        <div class="bg-white p-6 rounded-lg shadow-sm flex flex-col md:flex-row items-center justify-between gap-4">
+          <div class="flex items-center gap-4">
+            <div class="bg-green-100 p-4 rounded-lg"><i class='bx bx-user text-2xl'></i></div>
+            <div>
+              <h3 class="font-semibold text-lg">Join a community</h3>
+              <div class="flex items-center gap-2">
+                <span class="bg-blue-600 text-white text-xs px-2 py-0.5 rounded-full">2.5M+</span>
+                <span class="text-sm">Fuzu users</span>
+              </div>
             </div>
-    
-    </section>
-    <!-- <section class="md:flex md:items-center md:justify-center md:mx-20 md:h-[100vh]">
-            <div class="md:w-[50%] md:mt-40">
-                <p class="text-5xl font-bold">3,000+ </p> <br>
-                 <span class="text-1xl">free and paid for online courses and articles</span> 
-                 <div class="">
-                    <div class="flex gap-2">
-                        <i class='bx bx-trophy text-2xl'></i>
-                        <p>Build and certify your skills</p> 
-                    </div>
-                    <div class="flex gap-2">
-                        <i class='bx bxs-building-house text-2xl'></i>
-                        <p>Get expert advice from career coaches</p> 
-                    </div>
-                 </div>
-                 <button class="py-2 bg-[#ffe140] px-4 rounded-lg font-bold mt-4">Get a job now <span><i class='bx bx-right-arrow-alt'></i></span></button>
+          </div>
+          <i class='bx bx-right-arrow-alt text-2xl'></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Search Jobs Section -->
+  <section class="py-12 px-6">
+    <div class="max-w-6xl mx-auto space-y-8">
+      <h2 class="text-3xl font-bold text-center">Search jobs in Uganda</h2>
+      <div class="flex flex-wrap justify-center gap-2 text-sm text-center">
+        <a href="/jobs/africa" class="text-blue-600">Jobs in Africa</a><span>|</span>
+        <a href="/jobs/kenya" class="text-blue-600">Jobs in Kenya</a><span>|</span>
+        <a href="/jobs/nigeria" class="text-blue-600">Jobs in Nigeria</a>
+      </div>
+      <div class="bg-white rounded-lg shadow p-6">
+        <div class="grid gap-4 md:grid-cols-4">
+          <div class="relative">
+            <select class="w-full p-3 border rounded-md appearance-none pr-10">
+              <option>Jobs by profession</option>
+            </select>
+            <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+              <i class='bx bxs-chevron-down'></i>
             </div>
-            <div class="md:w-[70%] md:h-[60vh] bg-black">
-                <div class="md:w-[500px] md:h-[80vh]  overflow-hidden rounded-2xl w-[400px] bg-yellow-400">
-                    <img class="  w-full h-[60vh] w-96 object-contain" src="./images/3d-rendering-customizing-avatar-concept-removebg-preview (1).png" alt="">
-                </div>
+          </div>
+          <div class="relative">
+            <select class="w-full p-3 border rounded-md appearance-none pr-10">
+              <option>Jobs by industry</option>
+            </select>
+            <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+              <i class='bx bxs-chevron-down'></i>
             </div>
-    </section> -->
+          </div>
+          <div class="relative">
+            <select class="w-full p-3 border rounded-md appearance-none pr-10">
+              <option>Jobs by city</option>
+            </select>
+            <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+              <i class='bx bxs-chevron-down'></i>
+            </div>
+          </div>
+          <button class="bg-yellow-400 text-black font-medium p-3 rounded-md flex items-center justify-center gap-2">
+            <i class='bx bxs-chevron-down'></i>Search jobs
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Searches -->
+  <section class="py-8 px-6 bg-gray-50">
+    <div class="max-w-6xl mx-auto space-y-6">
+      <h2 class="text-2xl font-bold text-center">Popular searches</h2>
+      <div class="flex flex-wrap justify-center gap-4">
+        <!-- Buttons repeated from original -->
+        <!-- [Use same button structure, now auto-wraps] -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats & Images Sections -->
+  <section class="flex flex-col md:flex-row items-center justify-center gap-10 px-6 md:mx-20 py-12">
+    <div class="md:w-1/2">
+      <img src="https://img.freepik.com/free-photo/social-media-symbols-arrangement_23-2149019161.jpg" class="rounded-2xl w-full h-auto object-cover" alt=""/>
+    </div>
+    <div class="md:w-1/2 space-y-4 text-center md:text-left">
+      <p class="text-5xl font-bold">5,000+</p>
+      <p class="text-lg">monthly job vacancies across Africa</p>
+      <div class="space-y-2">
+        <div class="flex items-center gap-2 justify-center md:justify-start"><i class='bx bx-search-alt text-2xl'></i>Get personalized job alerts</div>
+        <div class="flex items-center gap-2 justify-center md:justify-start"><i class='bx bx-time text-2xl'></i>Apply for work in minutes</div>
+        <div class="flex items-center gap-2 justify-center md:justify-start"><i class='bx bx-chat text-2xl'></i>Receive feedback on applications</div>
+      </div>
+      <button class="py-2 bg-[#ffe140] px-4 rounded-lg font-bold mt-4">Get a job now <i class='bx bx-right-arrow-alt'></i></button>
+    </div>
+  </section>
+
+  <section class="flex flex-col-reverse md:flex-row items-center justify-center gap-10 px-6 md:mx-20 py-12">
+    <div class="md:w-1/2 space-y-4 text-center md:text-left">
+      <p class="text-5xl font-bold">3,000+</p>
+      <p class="text-lg">free and paid for online courses and articles</p>
+      <div class="space-y-2">
+        <div class="flex items-center gap-2 justify-center md:justify-start"><i class='bx bx-trophy text-2xl'></i>Build and certify your skills</div>
+        <div class="flex items-center gap-2 justify-center md:justify-start"><i class='bx bxs-building-house text-2xl'></i>Get expert advice</div>
+      </div>
+      <button class="py-2 bg-[#ffe140] px-4 rounded-lg font-bold mt-4">Get a job now <i class='bx bx-right-arrow-alt'></i></button>
+    </div>
+    <div class="md:w-1/2">
+      <img src="./images/3d-rendering-customizing-avatar-concept-removebg-preview (1).png" class="rounded-2xl w-full h-auto object-contain bg-yellow-400 p-4" alt=""/>
+    </div>
+  </section>
+
 </body>
 </html>
